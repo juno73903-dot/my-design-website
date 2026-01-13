@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>谭钧豪 | 空间设计作品集</title>
+    <meta name="description" content="空间设计师作品集：居住空间、办公空间、老建筑改造" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">TJH</span>
+        <div>
+          <div class="brand-name" data-i18n="name">谭钧豪</div>
+          <div class="brand-sub" data-i18n="role">空间设计师</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about" data-i18n="nav.about">简介</a>
+        <a href="#projects" data-i18n="nav.projects">项目</a>
+        <a href="#gallery" data-i18n="nav.gallery">作品图集</a>
+        <a href="#expertise" data-i18n="nav.expertise">专长</a>
+        <a href="#resume" data-i18n="nav.resume">简历</a>
+        <a href="#contact" data-i18n="nav.contact">联系</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button class="lang-btn" data-lang="zh">中</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <div class="eyebrow" data-i18n="hero.eyebrow">作品集 / Portfolio / Portfolio</div>
+          <h1 data-i18n="hero.title">让空间更有秩序，也更有温度</h1>
+          <p data-i18n="hero.subtitle">
+            专注居住、办公与老建筑改造，用叙事和细节回应真实生活与地方记忆。
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#projects" data-i18n="hero.cta">查看项目</a>
+            <a class="ghost" href="#contact" data-i18n="hero.ctaSecondary">联系我</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header" data-i18n="hero.cardTitle">个人信息</div>
+          <div class="hero-card-body profile-grid" id="profile-grid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="section-title">
+          <h2 data-i18n="about.title">关于我</h2>
+          <p data-i18n="about.subtitle">以空间回应人的日常与城市的记忆</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text" data-i18n="about.body">
+            我是空间设计师，擅长住宅、办公与老建筑改造。重视动线、光与材料的叙事关系，
+            通过功能与体验的平衡，创造可被长期使用、可被记住的空间。
+          </div>
+          <div class="about-card">
+            <div class="about-card-title" data-i18n="about.educationTitle">教育背景</div>
+            <div class="about-card-body" id="education"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="section reveal">
+        <div class="section-title">
+          <h2 data-i18n="expertise.title">专长</h2>
+          <p data-i18n="expertise.subtitle">从概念到落地的系统能力</p>
+        </div>
+        <div class="chips" id="expertise-chips"></div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-title">
+          <h2 data-i18n="projects.title">项目作品</h2>
+          <p data-i18n="projects.subtitle">居住、办公与城市记忆更新</p>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+
+      <section id="gallery" class="section reveal">
+        <div class="section-title">
+          <h2 data-i18n="gallery.title">项目图集</h2>
+          <p data-i18n="gallery.subtitle">精选画面与空间气氛</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-title">
+          <h2 data-i18n="approach.title">工作方法</h2>
+          <p data-i18n="approach.subtitle">从洞察到呈现的结构化推进</p>
+        </div>
+        <div class="timeline" id="approach"></div>
+      </section>
+
+      <section id="resume" class="section reveal">
+        <div class="section-title">
+          <h2 data-i18n="resume.title">简历下载</h2>
+          <p data-i18n="resume.subtitle">快速获取个人履历信息</p>
+        </div>
+        <div class="resume-card">
+          <div class="resume-text" data-i18n="resume.body">
+            如需完整履历，请下载 PDF 版简历。
+          </div>
+          <a class="primary resume-btn" href="assets/resume.pdf" download data-i18n="resume.cta">下载简历</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="section-title">
+          <h2 data-i18n="contact.title">联系</h2>
+          <p data-i18n="contact.subtitle">欢迎交流合作与项目机会</p>
+        </div>
+        <div class="contact-card" id="contact-card"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div data-i18n="footer">(c) 2026 谭钧豪 | 空间设计作品集</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+

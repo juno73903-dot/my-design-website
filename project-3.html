@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project | 谭钧豪</title>
+    <meta name="description" content="Project details" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-project-index="2">
+    <div class="bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">TJH</span>
+        <div>
+          <div class="brand-name" data-i18n="name">谭钧豪</div>
+          <div class="brand-sub" data-i18n="role">空间设计师</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html#about" data-i18n="nav.about">简介</a>
+        <a href="index.html#projects" data-i18n="nav.projects">项目</a>
+        <a href="index.html#gallery" data-i18n="nav.gallery">图集</a>
+        <a href="index.html#expertise" data-i18n="nav.expertise">专长</a>
+        <a href="index.html#resume" data-i18n="nav.resume">简历</a>
+        <a href="index.html#contact" data-i18n="nav.contact">联系</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button class="lang-btn" data-lang="zh">中</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="project-page">
+          <div class="project-page-header">
+            <div>
+              <div class="project-page-meta" id="project-meta"></div>
+              <div class="project-page-title" id="project-title"></div>
+            </div>
+            <a class="back-link" href="index.html#projects" data-i18n="projectPage.back">返回项目列表</a>
+          </div>
+          <div class="project-page-desc" id="project-desc"></div>
+          <div class="tag-row" id="project-tags"></div>
+          <div class="project-gallery-title" data-i18n="projectPage.gallery">项目图片</div>
+          <div class="project-page-gallery" id="project-gallery"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div data-i18n="footer">(c) 2026 谭钧豪 | 空间设计作品集</div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <div class="lightbox-content" role="dialog" aria-modal="true">
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">x</button>
+        <button class="lightbox-prev" type="button" aria-label="Previous"><</button>
+        <img class="lightbox-image" id="lightbox-image" alt="" />
+        <button class="lightbox-next" type="button" aria-label="Next">></button>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>
