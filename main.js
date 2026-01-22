@@ -3,7 +3,6 @@ const profileGrid = document.getElementById("profile-grid");
 const educationEl = document.getElementById("education");
 const expertiseEl = document.getElementById("expertise-chips");
 const projectsEl = document.getElementById("projects-grid");
-const galleryEl = document.getElementById("gallery-grid");
 const approachEl = document.getElementById("approach");
 const contactEl = document.getElementById("contact-card");
 
@@ -43,17 +42,6 @@ function updateText(lang) {
           <div class="project-desc">${project.desc}</div>
           <div class="tag-row">${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
         </a>
-      `
-    )
-    .join("");
-
-  galleryEl.innerHTML = galleryData[lang]
-    .map(
-      (item) => `
-        <figure class="gallery-card">
-          <img src="${item.src}" alt="${item.caption}" loading="lazy" />
-          <figcaption class="gallery-caption">${item.caption}</figcaption>
-        </figure>
       `
     )
     .join("");
