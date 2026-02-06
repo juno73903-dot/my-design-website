@@ -2,7 +2,7 @@
   zh: {
     name: "谭钧豪",     role: "设计实习生",
     nav: {
-      about: "简介",       projects: "项目",       gallery: "图集",       expertise: "专长",       resume: "简历",       contact: "联系"
+      about: "简介",       projects: "项目",       rural: "三下乡",       gallery: "图集",       expertise: "专长",       resume: "简历",       contact: "联系"
     },
     hero: {
       eyebrow: "作品集 / Portfolio / Portfolio",       title: "把设计作为一种方法——让我们给这个世界做个方案",       subtitle: "专注居住、办公与老建筑改造，用叙事和细节回应真实生活与地方记忆。",       cta: "查看项目",       ctaSecondary: "联系我",       cardTitle: "个人信息"
@@ -16,6 +16,9 @@
     projects: {
       title: "项目作品",       subtitle: "居住、办公与城市记忆更新"
     },
+    rural: {
+      title: "三下乡项目",       subtitle: "社会实践与公共空间更新",       count: "共 {count} 张"
+    },
     gallery: {
       title: "项目图集",       subtitle: "精选画面与空间气氛"
     },
@@ -23,7 +26,7 @@
       title: "工作方法",       subtitle: "从洞察到呈现的结构化推进"
     },
     resume: {
-      title: "简历下载",       subtitle: "快速获取个人履历信息",       body: "如需完整履历，请下载 PDF 版简历。",       cta: "下载简历"
+      title: "简历下载",       subtitle: "快速获取个人履历信息",       body: "如需完整履历，请下载 PDF 版简历。",       cta: "下载简历",       portfolioCta: "下载作品集"
     },
     projectPage: {
       title: "项目详情",       gallery: "项目图片",       back: "返回项目列表",       effect: "效果图",       plan: "平面图",       analysis: "设计分析图",       empty: "暂无图片"
@@ -36,7 +39,7 @@
   en: {
     name: "Junhao Tan",     role: "Design Intern",
     nav: {
-      about: "About",       projects: "Projects",       gallery: "Gallery",       expertise: "Expertise",       resume: "Resume",       contact: "Contact"
+      about: "About",       projects: "Projects",       rural: "Rural Practice",       gallery: "Gallery",       expertise: "Expertise",       resume: "Resume",       contact: "Contact"
     },
     hero: {
       eyebrow: "Portfolio / 作品集 / Portfolio",       title: "Orderly spaces with a human warmth",       subtitle: "Focused on residential, office, and adaptive reuse, shaping narratives through circulation, light, and detail.",       cta: "View projects",       ctaSecondary: "Contact",       cardTitle: "Profile"
@@ -50,6 +53,9 @@
     projects: {
       title: "Selected Projects",       subtitle: "Residential, workplace, and heritage renewal"
     },
+    rural: {
+      title: "Rural Practice",       subtitle: "Social practice and public space engagement",       count: "{count} photos"
+    },
     gallery: {
       title: "Project Gallery",       subtitle: "Selected frames and spatial atmosphere"
     },
@@ -57,7 +63,7 @@
       title: "Approach",       subtitle: "Structured workflow from insight to delivery"
     },
     resume: {
-      title: "Resume",       subtitle: "Download the PDF profile",       body: "Download the PDF resume for full details.",       cta: "Download PDF"
+      title: "Resume",       subtitle: "Download the PDF profile",       body: "Download the PDF resume for full details.",       cta: "Download PDF",       portfolioCta: "Download Portfolio"
     },
     projectPage: {
       title: "Project Details",       gallery: "Project Images",       back: "Back to projects",       effect: "Renderings",       plan: "Plans",       analysis: "Design Analysis",       empty: "No images yet"
@@ -70,7 +76,7 @@
   de: {
     name: "Junhao Tan",     role: "Designpraktikant",
     nav: {
-      about: "Profil",       projects: "Projekte",       gallery: "Galerie",       expertise: "Kompetenzen",       resume: "Lebenslauf",       contact: "Kontakt"
+      about: "Profil",       projects: "Projekte",       rural: "Landpraxis",       gallery: "Galerie",       expertise: "Kompetenzen",       resume: "Lebenslauf",       contact: "Kontakt"
     },
     hero: {
       eyebrow: "Portfolio / 作品集 / Portfolio",       title: "Strukturierte Raeume mit menschlicher Waerme",       subtitle: "Fokus auf Wohnen, Buero und Umnutzung historischer Bauten mit Narrativ, Licht und Detail.",       cta: "Projekte ansehen",       ctaSecondary: "Kontakt",       cardTitle: "Profil"
@@ -84,6 +90,9 @@
     projects: {
       title: "Projekte",       subtitle: "Wohnen, Arbeit und Stadterneuerung"
     },
+    rural: {
+      title: "Landpraxis",       subtitle: "Sozialpraxis und oeffentlicher Raum",       count: "{count} Fotos"
+    },
     gallery: {
       title: "Projektgalerie",       subtitle: "Ausgewaehlte Bilder und Raumatmosphaere"
     },
@@ -91,7 +100,7 @@
       title: "Arbeitsweise",       subtitle: "Strukturiert von Analyse bis Praesentation"
     },
     resume: {
-      title: "Lebenslauf",       subtitle: "PDF Profil herunterladen",       body: "Laden Sie den PDF-Lebenslauf fuer alle Details herunter.",       cta: "PDF herunterladen"
+      title: "Lebenslauf",       subtitle: "PDF Profil herunterladen",       body: "Laden Sie den PDF-Lebenslauf fuer alle Details herunter.",       cta: "PDF herunterladen",       portfolioCta: "Portfolio herunterladen"
     },
     projectPage: {
       title: "Projektdetails",       gallery: "Projektbilder",       back: "Zurueck zur Projektliste",       effect: "Renderings",       plan: "Plaene",       analysis: "Analyse",       empty: "Noch keine Bilder"
@@ -633,6 +642,186 @@ const projectsData = {
           { thumb: "assets/项目5复墟/thumbs/analysis/1213海城镇莲花埔仔粮站项目设计方案_41.jpg", full: "assets/项目5复墟/设计分析图/1213海城镇莲花埔仔粮站项目设计方案_41.png" }
         ]
       }
+    }
+  ]
+};
+
+const ruralData = {
+  zh: [
+    {
+      title: "三下乡项目1 乡村摄影",
+      body: [
+        "乡村摄影项目以汕尾市海丰县为主要拍摄地，团队走访海城镇顾莲峙村、莲花山片区与总寮社区，通过镜头记录当地老人与儿童的生活，展示乡村日常之美。",
+        "拍摄过程以村中老人为主体，捕捉他们的生活习惯、服饰与表情中的文化记忆；同时呈现乡村环境优化、基础设施改善与医疗条件提升后的生活质感。",
+        "作品在当地获得积极反馈，并通过线上平台展示，吸引更多人关注乡村文化与乡村振兴带来的变化。"
+      ],
+      images: [
+        "assets/三下乡项目1 乡村摄影/1.JPG",
+        "assets/三下乡项目1 乡村摄影/2.JPG",
+        "assets/三下乡项目1 乡村摄影/3.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00551.jpg",
+        "assets/三下乡项目1 乡村摄影/DSC00563.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00651.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00664.jpg",
+        "assets/三下乡项目1 乡村摄影/DSC08749.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08789.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08852.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08952.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC09067.JPG"
+      ]
+    },
+    {
+      title: "三下乡项目2 旧粮仓改造",
+      body: [
+        "在深入调研旧粮仓历史与建筑风貌的基础上，提出面向乡村文化展示的改造策略，使其从储粮空间转化为民俗馆。",
+        "方案保留粮仓原有外观与历史感，内部重新组织动线与展示空间，结合采光通风与图文、多媒体展示提升参观体验。",
+        "民俗馆划分为农具渔具展示、医疗文化历史馆、乡贤会议厅、名人馆等主题区，并设置互动体验活动以增强文化影响力。"
+      ],
+      images: [
+        "assets/三下乡项目2 旧粮仓改造/1.jpg",
+        "assets/三下乡项目2 旧粮仓改造/2.jpg",
+        "assets/三下乡项目2 旧粮仓改造/3.jpg",
+        "assets/三下乡项目2 旧粮仓改造/4.jpg",
+        "assets/三下乡项目2 旧粮仓改造/5.jpg",
+        "assets/三下乡项目2 旧粮仓改造/6.jpg",
+        "assets/三下乡项目2 旧粮仓改造/7.jpg",
+        "assets/三下乡项目2 旧粮仓改造/8.jpg",
+        "assets/三下乡项目2 旧粮仓改造/9.jpg",
+        "assets/三下乡项目2 旧粮仓改造/10.jpg"
+      ]
+    },
+    {
+      title: "三下乡项目3 “染织录”非遗染织技艺工作坊活动",
+      body: [
+        "“染织录”工作坊通过染织技艺体验活动，向乡村居民展示并推广传统扎染工艺，讲解历史背景与工艺特点。",
+        "活动现场使用植物颜料与模具进行绑扎、浸染与晾晒，参与者完成丝巾、布袋等作品，体验传统技艺的美学与实用价值。",
+        "项目获得村民与游客的广泛认可，增强了传统文化认同感与文化自豪感，为非遗传播带来新的活力。"
+      ],
+      images: [
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00282.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00466.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00485.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/微信图片_20260206231259_228_409.jpg",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/微信图片_20260206231411_229_409.jpg"
+      ]
+    }
+  ],
+  en: [
+    {
+      title: "Rural Project 1: Rural Photography",
+      body: [
+        "Based in Haifeng County, Shanwei, the team visited villages and communities to document daily life of elders and children, revealing the beauty of rural routines.",
+        "Photos focus on elders as carriers of cultural memory while also showing improved environments, infrastructure, and healthcare conditions after village revitalization.",
+        "The series received positive local feedback and was shared online to draw wider attention to rural culture."
+      ],
+      images: [
+        "assets/三下乡项目1 乡村摄影/1.JPG",
+        "assets/三下乡项目1 乡村摄影/2.JPG",
+        "assets/三下乡项目1 乡村摄影/3.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00551.jpg",
+        "assets/三下乡项目1 乡村摄影/DSC00563.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00651.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00664.jpg",
+        "assets/三下乡项目1 乡村摄影/DSC08749.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08789.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08852.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08952.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC09067.JPG"
+      ]
+    },
+    {
+      title: "Rural Project 2: Old Granary Renovation",
+      body: [
+        "After researching the granary's history and local needs, the team proposed a transformation into a folk culture museum for rural heritage display.",
+        "The strategy preserves the historic facade and reorganizes interior circulation and exhibition areas, using light, ventilation, and mixed media storytelling.",
+        "Five themed zones and hands on activities enhance public engagement and strengthen cultural pride."
+      ],
+      images: [
+        "assets/三下乡项目2 旧粮仓改造/1.jpg",
+        "assets/三下乡项目2 旧粮仓改造/2.jpg",
+        "assets/三下乡项目2 旧粮仓改造/3.jpg",
+        "assets/三下乡项目2 旧粮仓改造/4.jpg",
+        "assets/三下乡项目2 旧粮仓改造/5.jpg",
+        "assets/三下乡项目2 旧粮仓改造/6.jpg",
+        "assets/三下乡项目2 旧粮仓改造/7.jpg",
+        "assets/三下乡项目2 旧粮仓改造/8.jpg",
+        "assets/三下乡项目2 旧粮仓改造/9.jpg",
+        "assets/三下乡项目2 旧粮仓改造/10.jpg"
+      ]
+    },
+    {
+      title: "Rural Project 3: “Dye & Weave Chronicle” Workshop",
+      body: [
+        "The workshop introduced traditional tie dye techniques to local residents, explaining its history and cultural significance.",
+        "Participants used natural pigments and simple tools to create scarves and bags through binding, dyeing, and drying processes.",
+        "The event was warmly received, strengthening cultural identity and bringing new energy to intangible heritage promotion."
+      ],
+      images: [
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00282.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00466.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00485.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/微信图片_20260206231259_228_409.jpg",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/微信图片_20260206231411_229_409.jpg"
+      ]
+    }
+  ],
+  de: [
+    {
+      title: "Landprojekt 1: Laendliche Fotografie",
+      body: [
+        "Im Landkreis Haifeng (Shanwei) dokumentierte das Team den Alltag von Aelteren und Kindern in Doerfern und Nachbarschaften.",
+        "Die Fotos zeigen kulturelle Erinnerungen der Bewohner sowie Verbesserungen von Umgebung, Infrastruktur und medizinischer Versorgung.",
+        "Die Serie erhielt positive Rueckmeldungen vor Ort und wurde online geteilt, um mehr Aufmerksamkeit fuer laendliche Kultur zu schaffen."
+      ],
+      images: [
+        "assets/三下乡项目1 乡村摄影/1.JPG",
+        "assets/三下乡项目1 乡村摄影/2.JPG",
+        "assets/三下乡项目1 乡村摄影/3.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00551.jpg",
+        "assets/三下乡项目1 乡村摄影/DSC00563.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00651.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC00664.jpg",
+        "assets/三下乡项目1 乡村摄影/DSC08749.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08789.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08852.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC08952.JPG",
+        "assets/三下乡项目1 乡村摄影/DSC09067.JPG"
+      ]
+    },
+    {
+      title: "Landprojekt 2: Umnutzung des alten Getreidespeichers",
+      body: [
+        "Nach Recherche zur Geschichte und lokalen Beduerfnissen entstand ein Konzept zur Umnutzung als Volkskultur-Museum.",
+        "Das historische Erscheinungsbild bleibt erhalten, innen werden Wegefuehrung und Ausstellungsbereiche neu organisiert und mit Licht sowie Medien kombiniert.",
+        "Themenbereiche und Mitmachangebote staerken die kulturelle Identitaet und die lokale Beteiligung."
+      ],
+      images: [
+        "assets/三下乡项目2 旧粮仓改造/1.jpg",
+        "assets/三下乡项目2 旧粮仓改造/2.jpg",
+        "assets/三下乡项目2 旧粮仓改造/3.jpg",
+        "assets/三下乡项目2 旧粮仓改造/4.jpg",
+        "assets/三下乡项目2 旧粮仓改造/5.jpg",
+        "assets/三下乡项目2 旧粮仓改造/6.jpg",
+        "assets/三下乡项目2 旧粮仓改造/7.jpg",
+        "assets/三下乡项目2 旧粮仓改造/8.jpg",
+        "assets/三下乡项目2 旧粮仓改造/9.jpg",
+        "assets/三下乡项目2 旧粮仓改造/10.jpg"
+      ]
+    },
+    {
+      title: "Landprojekt 3: „Faerbe- und Webchronik“ Workshop",
+      body: [
+        "Der Workshop vermittelte traditionelle Batiktechniken und erklaerte deren Geschichte und Bedeutung.",
+        "Teilnehmende gestalteten Schals und Taschen mit Pflanzenfarben durch Binden, Faerben und Trocknen.",
+        "Die Aktivitaet wurde sehr positiv aufgenommen und staerkte das Bewusstsein fuer immaterielles Kulturerbe."
+      ],
+      images: [
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00282.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00466.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/DSC00485.JPG",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/微信图片_20260206231259_228_409.jpg",
+        "assets/三下乡项目3 “染织录”非遗染织技艺工作坊活动/微信图片_20260206231411_229_409.jpg"
+      ]
     }
   ]
 };
