@@ -1,14 +1,14 @@
 ﻿const i18n = {
   zh: {
-    name: "谭钧豪",     role: "空间设计师",
+    name: "谭钧豪",     role: "设计实习生",
     nav: {
       about: "简介",       projects: "项目",       gallery: "图集",       expertise: "专长",       resume: "简历",       contact: "联系"
     },
     hero: {
-      eyebrow: "作品集 / Portfolio / Portfolio",       title: "让空间更有秩序，也更有温度",       subtitle: "专注居住、办公与老建筑改造，用叙事和细节回应真实生活与地方记忆。",       cta: "查看项目",       ctaSecondary: "联系我",       cardTitle: "个人信息"
+      eyebrow: "作品集 / Portfolio / Portfolio",       title: "把设计作为一种方法——让我们给这个世界做个方案",       subtitle: "专注居住、办公与老建筑改造，用叙事和细节回应真实生活与地方记忆。",       cta: "查看项目",       ctaSecondary: "联系我",       cardTitle: "个人信息"
     },
     about: {
-      title: "关于我",       subtitle: "以空间回应人的日常与城市的记忆",       body: "我是空间设计师，擅长住宅、办公与老建筑改造。重视动线、光与材料的叙事关系，通过功能与体验的平衡，创造可被长期使用、可被记住的空间。",       educationTitle: "教育背景"
+      title: "关于我",       subtitle: "以空间回应人的日常与城市的记忆",       body: "就读于环境艺术设计专业，对空间设计与建筑始终保持浓厚兴趣。在校期间担任 ONSHOW 工作室负责人，策划并组织校内外二十余场活动，负责学校十余场展览的策展与布展工作，包括两届毕业优秀作品展，熟悉从前期策划到现场执行的整体流程。工作室期间跟随指导老师参与多个实际项目与比赛，积累了较为扎实的实践经验。\n\n连续两年担任“三下乡”社会实践突击队队长，带队前往汕尾开展实践活动，项目内容涵盖艺术装置、老建筑改造、非遗活动策划以及多方向的摄影记录，对公共空间与真实场景中的设计有较多一线经验。\n\n实习方面，2025 年暑期于公牛沐光实习，参与系统培训，并跟随项目进行工地量房与制图工作，接触商业空间与居住空间项目，对设计落地与施工流程有初步认识。",       educationTitle: "教育背景"
     },
     expertise: {
       title: "专长",       subtitle: "从概念到落地的系统能力"
@@ -34,7 +34,7 @@
     footer: "(c) 2026 谭钧豪 | 空间设计作品集"
   },
   en: {
-    name: "Junhao Tan",     role: "Spatial Designer",
+    name: "Junhao Tan",     role: "Design Intern",
     nav: {
       about: "About",       projects: "Projects",       gallery: "Gallery",       expertise: "Expertise",       resume: "Resume",       contact: "Contact"
     },
@@ -42,7 +42,7 @@
       eyebrow: "Portfolio / 作品集 / Portfolio",       title: "Orderly spaces with a human warmth",       subtitle: "Focused on residential, office, and adaptive reuse, shaping narratives through circulation, light, and detail.",       cta: "View projects",       ctaSecondary: "Contact",       cardTitle: "Profile"
     },
     about: {
-      title: "About",       subtitle: "Spaces that answer daily life and collective memory",       body: "I am a spatial designer specializing in residential, office, and adaptive reuse. I emphasize circulation, light, and material storytelling, balancing function and experience to create lasting spaces.",       educationTitle: "Education"
+      title: "About",       subtitle: "Spaces that answer daily life and collective memory",       body: "I study Environmental Art Design and have a strong interest in spatial design and architecture. During school I led the ONSHOW studio, planning and organizing 20+ on campus and off campus events, and curated 10+ exhibitions, including two sessions of outstanding graduate works. I am familiar with the full process from early planning to on site execution, and gained solid hands on experience through real projects and competitions with my advisor.\n\nFor two consecutive years I served as the team lead for the Three Going to the Countryside program, leading fieldwork in Shanwei that covered art installations, adaptive reuse, intangible heritage event planning, and multi direction photo documentation, building first line experience in public space and real world design.\n\nFor internship experience, in the summer of 2025 I interned at Gongniu Muguang, completed system training, and participated in site measurement and drafting for commercial and residential projects, gaining an initial understanding of design delivery and construction workflows.",       educationTitle: "Education"
     },
     expertise: {
       title: "Expertise",       subtitle: "Systematic delivery from concept to realization"
@@ -68,7 +68,7 @@
     footer: "(c) 2026 Junhao Tan | Spatial Design Portfolio"
   },
   de: {
-    name: "Junhao Tan",     role: "Raumdesigner",
+    name: "Junhao Tan",     role: "Designpraktikant",
     nav: {
       about: "Profil",       projects: "Projekte",       gallery: "Galerie",       expertise: "Kompetenzen",       resume: "Lebenslauf",       contact: "Kontakt"
     },
@@ -76,7 +76,7 @@
       eyebrow: "Portfolio / 作品集 / Portfolio",       title: "Strukturierte Raeume mit menschlicher Waerme",       subtitle: "Fokus auf Wohnen, Buero und Umnutzung historischer Bauten mit Narrativ, Licht und Detail.",       cta: "Projekte ansehen",       ctaSecondary: "Kontakt",       cardTitle: "Profil"
     },
     about: {
-      title: "Profil",       subtitle: "Raeume, die Alltag und Erinnerung verbinden",       body: "Ich bin Raumdesigner mit Schwerpunkt Wohnen, Buero und adaptive reuse. Wichtig sind Wegefuehrung, Licht und Material als Erzaehlung, um funktionale und einpraegsame Raeume zu schaffen.",       educationTitle: "Ausbildung"
+      title: "Profil",       subtitle: "Raeume, die Alltag und Erinnerung verbinden",       body: "Ich studiere Umweltkunst-Design und habe ein starkes Interesse an Raumgestaltung und Architektur. Waerend des Studiums leitete ich das ONSHOW Studio, organisierte mehr als 20 interne und externe Veranstaltungen und kuratierte ueber 10 Ausstellungen, darunter zwei Jahrgaenge mit ausgezeichneten Abschlussarbeiten. Ich bin mit dem gesamten Ablauf von der Planung bis zur Vor-Ort-Umsetzung vertraut und sammelte solide Praxiserfahrung in realen Projekten und Wettbewerben mit meinem Betreuer.\n\nZwei Jahre in Folge war ich Teamleiter der Drei-geht-aufs-Land-Sozialpraxis und leitete Einsaetze in Shanwei mit Inhalten wie Kunstinstallationen, Umnutzung historischer Bauten, Planung von immateriellem Kulturerbe und multidirektionaler Fotodokumentation. Dadurch habe ich viel Erfahrung mit oeffentlichen Raeumen und realen Szenarien gesammelt.\n\nIm Sommer 2025 absolvierte ich ein Praktikum bei Gongniu Muguang, nahm an systematischen Schulungen teil und arbeitete bei Aufmass und Zeichnung fuer gewerbliche und Wohnprojekte mit. So gewann ich ein erstes Verstaendnis fuer Designumsetzung und Bauablaeufe.",       educationTitle: "Ausbildung"
     },
     expertise: {
       title: "Kompetenzen",       subtitle: "Von der Idee bis zur Umsetzung"
@@ -116,7 +116,30 @@ const profileData = {
 };
 
 const educationData = {
-  zh: ["广东农工商职业技术学院 | 专科"],   en: ["Guangdong AIB Polytechnic College | Associate"],   de: ["Guangdong AIB Polytechnic College | Associate"]
+  zh: [
+    "2023-2026  广东农工商职业技术学院",
+    "2020-2023  佛山市岭南美术实验学校 双语部",
+    "2018-2023  Bundesrealgymnasium und Bundes-Oberstafenrealymnasium (奥地利)",
+    "在欧洲读了两年高中",
+    "2015-2018  佛山市协同国际学校",
+    "2009-2018  佛山市实验小学"
+  ],
+  en: [
+    "2023-2026  Guangdong AIB Polytechnic College",
+    "2020-2023  Foshan Lingnan Art Experimental School (Bilingual Division)",
+    "2018-2023  Bundesrealgymnasium und Bundes-Oberstufenrealgymnasium (Austria)",
+    "Studied two years of high school in Europe",
+    "2015-2018  Foshan Concordia International School",
+    "2009-2018  Foshan Experimental Primary School"
+  ],
+  de: [
+    "2023-2026  Guangdong AIB Polytechnic College",
+    "2020-2023  Foshan Lingnan Art Experimental School (Bilingual Division)",
+    "2018-2023  Bundesrealgymnasium und Bundes-Oberstufenrealgymnasium (Oesterreich)",
+    "Zwei Jahre Gymnasium in Europa",
+    "2015-2018  Foshan Concordia International School",
+    "2009-2018  Foshan Experimental Primary School"
+  ]
 };
 
 const expertiseData = {
@@ -649,6 +672,10 @@ const contactData = {
     { label: "Telefon", value: "+86 180 2587 6866" },     { label: "E-Mail", value: "1791314409@qq.com" },     { label: "Stadt", value: "Foshan, Guangdong" }
   ]
 };
+
+
+
+
 
 
 
