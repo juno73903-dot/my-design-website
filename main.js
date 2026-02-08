@@ -1,4 +1,3 @@
-﻿const langButtons = document.querySelectorAll(".lang-btn");
 const profileGrid = document.getElementById("profile-grid");
 const educationEl = document.getElementById("education");
 const expertiseEl = document.getElementById("expertise-chips");
@@ -10,13 +9,13 @@ const ruralLightbox = document.getElementById("rural-lightbox");
 const ruralLightboxImage = document.getElementById("rural-lightbox-image");
 const ruralLightboxCaption = document.getElementById("rural-lightbox-caption");
 
-let ruralLightboxProject = 0;
 let ruralLightboxIndex = 0;
 let ruralLightboxImages = [];
 let ruralLightboxTitle = "";
 
-function updateText(lang) {
-  document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+function updateText() {
+  const lang = "zh";
+  document.documentElement.lang = "zh-CN";
   const entries = document.querySelectorAll("[data-i18n]");
   entries.forEach((node) => {
     const key = node.getAttribute("data-i18n");
@@ -39,18 +38,30 @@ function updateText(lang) {
   educationEl.innerHTML = educationData[lang].map((item) => `<div>${item}</div>`).join("");
 
   expertiseEl.innerHTML = expertiseData[lang]
-    .map((item) => `<div class="chip">${item}</div>`)
+    .map((item) => {
+      if (typeof item === "string" && item.startsWith("擅长技能：")) {
+        const skills = item.replace("擅长技能：", "").split("、");
+        return `
+          <div class="skills-row">
+            <div class="skills-label">擅长技能：</div>
+            <div class="skills-list">${skills.map((skill) => `<span>${skill.trim()}</span>`).join("")}</div>
+          </div>
+        `;
+      }
+      return `<div class="chip">${item}</div>`;
+    })
     .join("");
 
   projectsEl.innerHTML = projectsData[lang]
-    .map(
-      (project, index) => {
-        const coverIndexMap = { 0: 1, 1: 1, 2: 0, 3: 3, 4: 1 };
-        const coverIndex = coverIndexMap[index] ?? 0;
-        const coverImage = project?.images?.effect?.[coverIndex] || project?.images?.effect?.[0];
-        const cover = coverImage?.thumb || coverImage?.full || "";
-        const coverHtml = cover ? `<div class="project-cover"><img src="${cover}" alt="${project.title}" loading="lazy" /></div>` : "";
-        return `
+    .map((project, index) => {
+      const coverIndexMap = { 0: 1, 1: 1, 2: 0, 3: 3, 4: 1 };
+      const coverIndex = coverIndexMap[index] ?? 0;
+      const coverImage = project?.images?.effect?.[coverIndex] || project?.images?.effect?.[0];
+      const cover = coverImage?.thumb || coverImage?.full || "";
+      const coverHtml = cover
+        ? `<div class="project-cover"><img src="${cover}" alt="${project.title}" loading="lazy" /></div>`
+        : "";
+      return `
         <a class="project-card" href="project-${index + 1}.html">
           ${coverHtml}
           <div class="project-meta">${project.meta}</div>
@@ -59,8 +70,7 @@ function updateText(lang) {
           <div class="tag-row">${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
         </a>
       `;
-      }
-    )
+    })
     .join("");
 
   ruralEl.innerHTML = ruralData[lang]
@@ -102,14 +112,12 @@ function updateText(lang) {
   contactEl.innerHTML = contactData[lang]
     .map((item) => `<div class="contact-row"><span>${item.label}</span><span>${item.value}</span></div>`)
     .join("");
-
 }
 
-function openRuralLightbox(projectIndex, imageIndex, lang) {
-  const project = ruralData[lang][projectIndex];
+function openRuralLightbox(projectIndex, imageIndex) {
+  const project = ruralData.zh[projectIndex];
   ruralLightboxImages = project?.images || [];
   ruralLightboxTitle = project?.title || "";
-  ruralLightboxProject = projectIndex;
   ruralLightboxIndex = imageIndex;
   const src = ruralLightboxImages[ruralLightboxIndex];
   if (!src) return;
@@ -133,26 +141,14 @@ function stepRuralLightbox(delta) {
   ruralLightboxCaption.textContent = `${ruralLightboxTitle} · ${ruralLightboxIndex + 1}/${ruralLightboxImages.length}`;
 }
 
-function setLanguage(lang) {
-  langButtons.forEach((btn) => btn.classList.toggle("active", btn.dataset.lang === lang));
-  updateText(lang);
-  localStorage.setItem("lang", lang);
-}
-
-langButtons.forEach((btn) => {
-  btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
-});
-
-const storedLang = localStorage.getItem("lang") || "zh";
-setLanguage(storedLang);
+updateText();
 
 ruralEl.addEventListener("click", (event) => {
   const target = event.target;
   if (!(target instanceof HTMLImageElement)) return;
   const projectIndex = Number(target.dataset.project);
   const imageIndex = Number(target.dataset.image);
-  const lang = localStorage.getItem("lang") || "zh";
-  openRuralLightbox(projectIndex, imageIndex, lang);
+  openRuralLightbox(projectIndex, imageIndex);
 });
 
 document.querySelectorAll("[data-lightbox-close]").forEach((btn) => {
@@ -189,6 +185,3 @@ if (window.gsap) {
   gsap.to(".orb-2", { x: -30, y: 40, duration: 10, repeat: -1, yoyo: true, ease: "sine.inOut" });
   gsap.to(".orb-3", { x: 20, y: 50, duration: 12, repeat: -1, yoyo: true, ease: "sine.inOut" });
 }
-
-
-

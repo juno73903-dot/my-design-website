@@ -128,32 +128,23 @@ const educationData = {
   zh: [
     "2023-2026  广东农工商职业技术学院",
     "2020-2023  佛山市岭南美术实验学校 双语部",
-    "2018-2023  Bundesrealgymnasium und Bundes-Oberstafenrealymnasium (奥地利)",
-    "在欧洲读了两年高中",
-    "2015-2018  佛山市协同国际学校",
-    "2009-2018  佛山市实验小学"
+    "2018-2023  Bundesrealgymnasium und Bundes-Oberstafenrealymnasium (奥地利)"
   ],
   en: [
     "2023-2026  Guangdong AIB Polytechnic College",
     "2020-2023  Foshan Lingnan Art Experimental School (Bilingual Division)",
-    "2018-2023  Bundesrealgymnasium und Bundes-Oberstufenrealgymnasium (Austria)",
-    "Studied two years of high school in Europe",
-    "2015-2018  Foshan Concordia International School",
-    "2009-2018  Foshan Experimental Primary School"
+    "2018-2023  Bundesrealgymnasium und Bundes-Oberstufenrealgymnasium (Austria)"
   ],
   de: [
     "2023-2026  Guangdong AIB Polytechnic College",
     "2020-2023  Foshan Lingnan Art Experimental School (Bilingual Division)",
-    "2018-2023  Bundesrealgymnasium und Bundes-Oberstufenrealgymnasium (Oesterreich)",
-    "Zwei Jahre Gymnasium in Europa",
-    "2015-2018  Foshan Concordia International School",
-    "2009-2018  Foshan Experimental Primary School"
+    "2018-2023  Bundesrealgymnasium und Bundes-Oberstufenrealgymnasium (Oesterreich)"
   ]
 };
 
 const expertiseData = {
   zh: [
-    "居住空间规划",     "办公空间设计",     "老建筑改造",     "用户需求洞察",     "空间叙事与动线",     "材料与光环境",     "概念到落地表达"
+    "居住空间规划",     "办公空间设计",     "老建筑改造",     "用户需求洞察",     "空间叙事与动线",     "材料与光环境",     "概念到落地表达",     "擅长技能：CAD、SketchUp、D5、Adobe Photoshop、Adobe Illustrator、Midjourney、ChatGPT、等等"
   ],
   en: [
     "Residential planning",     "Office interiors",     "Adaptive reuse",     "User research",     "Spatial narrative & circulation",     "Material and lighting",     "Concept-to-delivery"
